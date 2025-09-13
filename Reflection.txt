@@ -1,0 +1,21 @@
+1.
+For a CSV to be correct, each inputted row should correspond to 1 array in the 
+output. Moreover, the CSV should ensure that the column counts in rows match the
+schema. Data types should also match the schema. The CSV should cut extra 
+whitespace, but leave meaningful whitespace. The CSV should also handle empty
+fields and not break. The CSV should have schema validation to ensure the Data
+matches what the user expects. The CSV should result in consistent row counts,
+field counts, and types.
+2.
+I would generate random rows with different column numbers in order to test the
+the schema validation and how the CSV handles errors. This random data could
+have empty strings, special characters, or extra whitespace. The randomness of
+the data would provide more data to test and allow us to see if the CSV and 
+schema work for data that the developer has not thought of. I could also
+use the randomizer to see if the parser catches errors correctly.
+3.
+This sprint differed from previous assignments since I was expected to consult
+an LLM for ideas, while most other classes block the usage of it. Moreover,
+the spring included work on validation using schemas, something I have not done
+previously. I encountered a bug in the parser not recognizing when an error 
+occurred. I corrected this by using a try-catch.
